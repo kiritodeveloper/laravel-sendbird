@@ -1,0 +1,26 @@
+{
+    "name": "thinksterminds/laravel-sendbird",
+    "description": "Larvel package for SendBird Chat Application",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rameez rami",
+            "email": "rameespu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ThinksterMinds\\SendBird\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ThinksterMinds\\SendBird\\SendBirdServiceProvider"
+            ]
+        }
+    }
+}
