@@ -4,6 +4,8 @@ namespace ThinksterMinds\SendBird;
 
 use Illuminate\Support\ServiceProvider;
 
+use Illuminate\Support\Facades\App;
+
 class SendBirdServiceProvider extends ServiceProvider
 {
 
@@ -24,7 +26,11 @@ class SendBirdServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        App::bind('sendbird', function()
 
+        {
+            return new SendBird();
+        });
     }
 
     /**

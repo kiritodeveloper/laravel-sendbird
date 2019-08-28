@@ -14,13 +14,19 @@
     "autoload": {
         "psr-4": {
             "ThinksterMinds\\SendBird\\": "src/"
-        }
+        },
+        "files": [
+            "src/app/Helpers/helpers.php"
+        ]
     },
     "extra": {
         "laravel": {
             "providers": [
                 "ThinksterMinds\\SendBird\\SendBirdServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "SendBird": "ThinksterMinds\\SendBird\\Facades\\SendBird"
+            }
         }
     }
 }
